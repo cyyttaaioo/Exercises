@@ -22,7 +22,7 @@ public class JZ4 {
             if(pre[0] == in[i]){
                 //结果树的根节点的左子树              左子树的前序遍历                              左子树的中序遍历
                 root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
-
+                //结果树的根节点的右子树              右子树的前序遍历                              右子树的中序遍历
                 root.right = reConstructBinaryTree(Arrays.copyOfRange(pre, i + 1, pre.length), Arrays.copyOfRange(in, i + 1, in.length));
                 //递归之后直接结束for循环
                 break;
