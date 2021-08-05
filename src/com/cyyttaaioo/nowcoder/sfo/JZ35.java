@@ -25,7 +25,7 @@ public class JZ35 {
                 nums[k] = temp[j++];
             }else if(j == right + 1 || temp[i] <= temp[j]){
                 nums[k] = temp[i++];
-            }else{
+            }else{//temp[i] > temp[j] 即题目要求
                 nums[k] = temp[j++];
                 res = (res + mid - i + 1)%1000000007;
                 //%1000000007防止数据溢出
