@@ -1,6 +1,6 @@
 package com.cyyttaaioo.nowcoder.sfo;
 
-public class JZ48 {
+public class JZ49 {
     public int StrToInt(String str) {
         int res = 0, bndry = Integer.MAX_VALUE / 10;
         int i = 0 , sign = 1, length = str.length();
